@@ -50,7 +50,6 @@ window.addEventListener("load", () => {
             <div class="col-lg-4">
                 <h4>${element.name}</h4>
                 <img src="${element.thumb}" />
-
                 <p>R$ ${element.promoPrice.toFixed(2)}</p>
             </div>
         `;
@@ -61,7 +60,6 @@ window.addEventListener("load", () => {
             <div class="col-lg-4">
                 <h4>${element.name}</h4>
                 <img src="${element.thumb}" />
-
                 <p>R$ ${
                   element.originalPrice > element.promoPrice
                     ? element.promoPrice.toFixed(2)
