@@ -1,3 +1,8 @@
 .bg-body {
     background-color: oklch(86.9% 0.022 252.894) !important;
 }
+
+#promo-games {
+    margin: 12px 0px;
+    padding: 12px;
+}
