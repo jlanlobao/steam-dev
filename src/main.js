@@ -7,8 +7,12 @@ const btnAction = document.getElementById("btn-action");
 const btnSimulation = document.getElementById("btn-simulation");
 
 // FUNCOES
-const createPromoGames = games.filter(
+const promoGames = games.filter(
   (element) => element.promoPrice < element.originalPrice
+);
+
+const recomendedGames = games.filter(
+  (element) => element.rating > 8
 );
 
 // Eventos
@@ -21,11 +25,11 @@ btnSimulation.addEventListener("click", () => {
 });
 
 window.addEventListener("load", () => {
-  createPromoGames.forEach((element, index) => {
+  promoGames.forEach((element, index) => {
     divPromoGames.innerHTML += `
             <div class="col-lg-4">
+                <img src="${element.thumb}" class="rounded" />
                 <h4>${element.name}</h4>
-                <img src="${element.thumb}" />
                 <p>${element.promoPrice.toLocaleString("pt-BR", {
                   style: "currency",
                   currency: "BRL",
@@ -34,22 +38,23 @@ window.addEventListener("load", () => {
         `;
   });
 
-  games.forEach((element, index) => {
+  recomendedGames.forEach((element, index) => {
     divRecommended.innerHTML += `
             <div class="col-lg-4">
-                <h4>${element.name}</h4>
-                <img src="${element.thumb}" />
-                <p>${
-                  element.originalPrice > element.promoPrice
-                    ? element.promoPrice.toLocaleString("pt-BR", {
-                        style: "currency",
-                        currency: "BRL",
-                      })
-                    : element.originalPrice.toLocaleString("pt-BR", {
-                        style: "currency",
-                        currency: "BRL",
-                      })
-                }</p>
+              <img src="${element.thumb}" class="rounded" />
+              <h4>${element.name}</h4>
+                
+              <p>${
+                element.originalPrice > element.promoPrice
+                  ? element.promoPrice.toLocaleString("pt-BR", {
+                      style: "currency",
+                      currency: "BRL",
+                  })
+                  : element.originalPrice.toLocaleString("pt-BR", {
+                      style: "currency",
+                      currency: "BRL",
+                  })
+              }</p>
             </div>
         `;
   });
