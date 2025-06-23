@@ -164,7 +164,7 @@ export const games = [
         promoPrice: 17.46,
         ageRating: "livre",
         rating: 6.5,
-        category: ["Simulation", "Driving"],
+        category: ["Mmorpg", "Adventure"],
         photos: [
             "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/582660/ss_a4c2348412fec008a7dadacb52793bc2f6185f26.600x338.jpg?t=1749061800",
             "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/582660/ss_8cd369deed11b84f64e37d08ea8e835be888d3f5.600x338.jpg?t=1749061800"        
