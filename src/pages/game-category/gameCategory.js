@@ -30,5 +30,4 @@ window.addEventListener("load", () => {
             </div>
         `;
   });
-
 });

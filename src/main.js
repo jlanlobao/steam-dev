@@ -18,6 +18,21 @@ const recomendedGames = games.filter(
   (element) => element.rating > 8
 );
 
+function createNewGame(gamesList, gamesContainer){
+  gamesList.forEach((element) => {
+    gamesContainer.innerHTML += `
+            <div class="col-lg-4">
+                <img src="${element.thumb}" class="rounded" />
+                <h4>${element.name}</h4>
+                <p>${element.promoPrice.toLocaleString("pt-BR", {
+                  style: "currency",
+                  currency: "BRL",
+                })}</p>
+            </div>
+        `;
+  });
+}
+
 // Eventos
 btnAction.addEventListener("click", () => {
   window.location.href = `src/pages/game-category/index.html?category=${btnAction.name}`;
@@ -40,19 +55,10 @@ btnFight.addEventListener("click", () => {
 });
 
 window.addEventListener("load", () => {
-  promoGames.forEach((element, index) => {
-    divPromoGames.innerHTML += `
-            <div class="col-lg-4">
-                <img src="${element.thumb}" class="rounded" />
-                <h4>${element.name}</h4>
-                <p>${element.promoPrice.toLocaleString("pt-BR", {
-                  style: "currency",
-                  currency: "BRL",
-                })}</p>
-            </div>
-        `;
-  });
+  createNewGame(promoGames, divPromoGames);
+  createNewGame(recomendedGames, divRecommended);
 
+  /*
   recomendedGames.forEach((element, index) => {
     divRecommended.innerHTML += `
             <div class="col-lg-4">
@@ -72,5 +78,5 @@ window.addEventListener("load", () => {
               }</p>
             </div>
         `;
-  });
+  });*/
 });
