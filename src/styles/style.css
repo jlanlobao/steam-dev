@@ -1,6 +1,24 @@
 .bg-body {
     background-color: oklch(86.9% 0.022 252.894) !important;
 }
+.my-header {
+    nav {
+        display: flex;
+        align-items: center;
+        height: 100px;
+        justify-content: space-around;
+
+        div {
+            display: flex;
+            gap: 10px;
+
+            .bi {
+                font-size: 24px;
+                cursor: pointer;
+            }
+        }
+    }
+}
 
 #promo-games, #recommended {
     margin: 12px 0px;
