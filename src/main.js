@@ -1,4 +1,5 @@
 import { games } from "./data/games.js";
+import { createNewGame } from "./scripts/createNewGames.js";
 
 // SELETORES
 const divRecommended = document.getElementById("recommended");
@@ -17,21 +18,6 @@ const promoGames = games.filter(
 const recomendedGames = games.filter(
   (element) => element.rating > 8
 );
-
-function createNewGame(gamesList, gamesContainer){
-  gamesList.forEach((element) => {
-    gamesContainer.innerHTML += `
-            <div class="col-lg-4">
-                <img src="${element.thumb}" class="rounded" />
-                <h4>${element.name}</h4>
-                <p>${element.promoPrice.toLocaleString("pt-BR", {
-                  style: "currency",
-                  currency: "BRL",
-                })}</p>
-            </div>
-        `;
-  });
-}
 
 // Eventos
 btnAction.addEventListener("click", () => {
@@ -57,26 +43,4 @@ btnFight.addEventListener("click", () => {
 window.addEventListener("load", () => {
   createNewGame(promoGames, divPromoGames);
   createNewGame(recomendedGames, divRecommended);
-
-  /*
-  recomendedGames.forEach((element, index) => {
-    divRecommended.innerHTML += `
-            <div class="col-lg-4">
-              <img src="${element.thumb}" class="rounded" />
-              <h4>${element.name}</h4>
-                
-              <p>${
-                element.originalPrice > element.promoPrice
-                  ? element.promoPrice.toLocaleString("pt-BR", {
-                      style: "currency",
-                      currency: "BRL",
-                  })
-                  : element.originalPrice.toLocaleString("pt-BR", {
-                      style: "currency",
-                      currency: "BRL",
-                  })
-              }</p>
-            </div>
-        `;
-  });*/
 });
