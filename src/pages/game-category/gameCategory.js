@@ -5,9 +5,15 @@ const divNewGame = document.getElementById("new-games");
 window.addEventListener("load", () => {
   const url = new URL(window.location.href);
   const category = url.searchParams.get("category");
-
   const newGames = games.filter((e) => e.category.includes(category));
   console.log(newGames);
+
+  //Titulo
+  const newTitle = document.createElement("h2");
+  newTitle.textContent = `${category}`;
+  divNewGame.appendChild(newTitle);
+
+  
 
   // CRIAR ELEMENTOS A PARTIR DE NEW GAMES
   newGames.forEach((element) => {
@@ -26,8 +32,8 @@ window.addEventListener("load", () => {
               style: "currency",
                       currency: "BRL",
                   })
-              }</p>
-            </div>
-        `;
+        }</p>
+      </div>
+      `;
   });
 });

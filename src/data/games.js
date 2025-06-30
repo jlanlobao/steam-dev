@@ -19,7 +19,7 @@ export const games = [
 
     {
         id: 2, 
-        name: "Marvel'Devil May Cry 5",
+        name: "Marvel's Devil May Cry 5",
         thumb: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/601150/header.jpg?t=1701395090",
         originalPrice: 99.90,
         promoPrice: 24.75,
