@@ -22,7 +22,7 @@ Voce deve colocar icones do seu github, linkedin, whatsapp e email
 [] na nova pagina voce pega o valor ou faz um find ou filter, preferencia um filter. 
 
 
-[] se concentrar nas novas base de dados
+[X] se concentrar nas novas base de dados
 
 [] Ao clicar em algum jogo fazer o esquema de ter uma nova pagina para renderizar o jogo.
 [] nova pagina sera a game.html e deve receber uma query pelo ID
