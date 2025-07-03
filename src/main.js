@@ -9,6 +9,7 @@ const btnSimulation = document.getElementById("btn-simulation");
 const btnMmorpg = document.getElementById("btn-mmorpg");
 const btnSports = document.getElementById("btn-sports");
 const btnFight = document.getElementById("btn-fight");
+const btnSearch = document.getElementById("btnSearch");
 
 // FUNCOES
 const promoGames = games.filter(
@@ -37,6 +38,10 @@ btnSports.addEventListener("click", () => {
 });
 
 btnFight.addEventListener("click", () => {
+  window.location.href = `src/pages/game-category/index.html?category=${btnFight.name}`;
+});
+
+btnSearch.addEventListener("click", () => {
   window.location.href = `src/pages/game-category/index.html?category=${btnFight.name}`;
 });
 
