@@ -3,29 +3,20 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  color: oklch(0.302 0.056 229.695)
+  color: oklch(0.302 0.056 229.695);
 }
 
 .bg-body {
     background-color: oklch(86.9% 0.022 252.894) !important;
 }
-.my-header {
-    nav {
-        display: flex;
-        align-items: center;
-        height: 100px;
-        justify-content: space-around;
 
-        div {
-            display: flex;
-            gap: 10px;
+/* Header */
+#btnLogin, #btnSearch {
+    color: white;
+}
 
-            .bi {
-                font-size: 24px;
-                cursor: pointer;
-            }
-        }
-    }
+#btnLogin:hover, #btnSearch:hover{
+    background-color: oklch(0.372 0.044 257.287);
 }
 
 #promo-games, #recommended {

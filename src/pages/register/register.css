@@ -1,0 +1,17 @@
+.bg-body {
+    background-color: oklch(86.9% 0.022 252.894) !important;
+}
+
+#btnLogin, #btnSearch {
+    color: white;
+}
+
+#btnLogin:hover, #btnSearch:hover{
+    background-color: oklch(0.372 0.044 257.287);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

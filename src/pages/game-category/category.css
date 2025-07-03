@@ -1,0 +1,15 @@
+#btnSearch, #btnSubmit {
+  border: none;
+  background-color: oklch(0.302 0.056 229.695);
+  color: oklch(86.9% 0.022 252.894);
+}
+
+#btnSearch:hover, #btnSubmit:hover {
+  background-color: oklch(0.372 0.044 257.287);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
