@@ -35,8 +35,31 @@
         </div>
     </header>
 
-    <main class="container">
-
+    <main class="d-flex align-items-center py-6">
+        <form class="w-100 m-auto form-container">
+            <div class="mb-3">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Seu e-mail">
+            </div>
+            <div class="mb-3">
+                <label for="confirmEmail" class="form-label">Confirmar email</label>
+                <input type="email" class="form-control" id="confirmEmail" placeholder="Confirmar seu e-mail">
+            </div>
+            <div class="mb-3">
+                <label for="inputPassword" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="inputPassword" placeholder="Senha">
+            </div>
+            <div class="mb-3">
+                <label for="confirmPassword" class="form-label">Confirmar senha</label>
+                <input type="password" class="form-control" id="confirmPassword" placeholder="Confirmar sua senha">
+            </div>
+            <div class="form-check d-flex align-items-start">
+                <input type="checkbox" class="m-1" id="confirmAge">
+                <label class="form-check-label" for="confirmAge">Tenho 13 anos ou mais de idade e concordo com os termos do Acordo de Subscrição e da Política de Privacidade da SteamDev.</label>
+                </div>
+            <button type="submit" id="btnSubmit" class="btn mt-4 w-100">Entrar</button>
+            
+        </form>
     </main>
 
     <footer class="bg-cyan-950 ">

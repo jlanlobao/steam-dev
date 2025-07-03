@@ -1,4 +1,4 @@
-body {
+body, a {
   font-family: "Inter", Arial, Helvetica, sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -17,7 +17,7 @@ body {
 #btnSearch, #btnSubmit {
   border: none;
   background-color: oklch(0.302 0.056 229.695);
-  color: oklch(86.9% 0.022 252.894);
+  color: white;
 }
 
 #btnSearch:hover, #btnSubmit:hover {

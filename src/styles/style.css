@@ -24,11 +24,6 @@ body {
     padding: 12px;
 }
 
-#new-games {
-    margin: 0px ;
-    padding: 12px;
-}
-
 .carousel-caption span {
     padding: 4px;
     background-color: oklch(0.302 0.056 229.7 / 0.6);

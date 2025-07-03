@@ -1,13 +1,31 @@
+body, a {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: oklch(0.302 0.056 229.695);
+}
+
 .bg-body {
     background-color: oklch(86.9% 0.022 252.894) !important;
 }
 
-#btnLogin, #btnSearch {
-    color: white;
+.form-container {
+  max-width: 350px;
 }
 
-#btnLogin:hover, #btnSearch:hover{
+#btnLogin, #btnSearch, #btnSubmit {
+    background-color: oklch(0.302 0.056 229.695);
+    color: white;
+
+}
+
+#btnLogin:hover, #btnSearch:hover, #btnSubmit:hover {
     background-color: oklch(0.372 0.044 257.287);
+}
+
+.form-check {
+    padding: 0;
 }
 
 footer {
@@ -15,3 +33,4 @@ footer {
     bottom: 0;
     width: 100%;
 }
+

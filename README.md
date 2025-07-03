@@ -10,10 +10,10 @@
 [X] Seletores de todas as categorias dos botoes. 
 [X] em game-category criar os elementos a partir de newGames
 
-[] Pagina de Registro, com as paletas de cor
+[X] Pagina de Registro, com as paletas de cor
 
-[] Organizar paleta de cor de todos elementos que ja foram criados.
-[] Deve criar um footer(rodape) -> com a mesma paleta de cor do header. 
+[X] Organizar paleta de cor de todos elementos que ja foram criados.
+[X] Deve criar um footer(rodape) -> com a mesma paleta de cor do header. 
 Voce deve colocar icones do seu github, linkedin, whatsapp e email 
 
 [] Deve ter um id no search
