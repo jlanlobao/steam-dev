@@ -10,6 +10,7 @@ const btnMmorpg = document.getElementById("btn-mmorpg");
 const btnSports = document.getElementById("btn-sports");
 const btnFight = document.getElementById("btn-fight");
 const btnSearch = document.getElementById("btnSearch");
+const inputSearch = document.getElementById("inputSearch");
 
 // FUNCOES
 const promoGames = games.filter(
@@ -42,7 +43,7 @@ btnFight.addEventListener("click", () => {
 });
 
 btnSearch.addEventListener("click", () => {
-  window.location.href = `src/pages/game-category/index.html?category=${btnFight.name}`;
+  window.location.href = `/steam-dev/src/pages/search/search.html?search=${inputSearch.value}`;
 });
 
 window.addEventListener("load", () => {

@@ -16,9 +16,9 @@
 [X] Deve criar um footer(rodape) -> com a mesma paleta de cor do header. 
 Voce deve colocar icones do seu github, linkedin, whatsapp e email 
 
-[] Deve ter um id no search
-[] Voce deve resgartar o id do search no main.js
-[] ao clicar no icone de search voce deve capturar o que foi escrito no input e jogar para uma nova pagina chamada search.html
+[X] Deve ter um id no search
+[X] Voce deve resgartar o id do search no main.js
+[X] ao clicar no icone de search voce deve capturar o que foi escrito no input e jogar para uma nova pagina chamada search.html
 [] na nova pagina voce pega o valor ou faz um find ou filter, preferencia um filter. 
 
 
