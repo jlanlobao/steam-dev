@@ -1,5 +1,6 @@
 import { games } from "../../data/games.js";
 import { createNewGame } from "../../scripts/createNewGames.js";
+import { createCardEventListener } from "../../scripts/createCardEventListener.js";
 
 const divNewGame = document.getElementById("new-games");
 const divPromoGames = document.getElementById("promo-games");
@@ -49,5 +50,6 @@ window.addEventListener("load", () => {
 
   // CRIAR ELEMENTOS A PARTIR DE NEW GAMES
   createNewGame(newGames, divNewGame);
-
+  
+  createCardEventListener();
 });

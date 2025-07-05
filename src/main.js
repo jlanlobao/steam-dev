@@ -1,5 +1,6 @@
 import { games } from "./data/games.js";
 import { createNewGame } from "./scripts/createNewGames.js";
+import { createCardEventListener } from "./scripts/createCardEventListener.js";
 
 // SELETORES
 const divRecommended = document.getElementById("recommended");
@@ -49,4 +50,6 @@ btnSearch.addEventListener("click", () => {
 window.addEventListener("load", () => {
   createNewGame(promoGames, divPromoGames);
   createNewGame(recomendedGames, divRecommended);
+
+  createCardEventListener();
 });
