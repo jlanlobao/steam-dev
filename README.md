@@ -24,5 +24,5 @@ Voce deve colocar icones do seu github, linkedin, whatsapp e email
 
 [X] se concentrar nas novas base de dados
 
-[] Ao clicar em algum jogo fazer o esquema de ter uma nova pagina para renderizar o jogo.
-[] nova pagina sera a game.html e deve receber uma query pelo ID
+[X] Ao clicar em algum jogo fazer o esquema de ter uma nova pagina para renderizar o jogo.
+[X] nova pagina sera a game.html e deve receber uma query pelo ID

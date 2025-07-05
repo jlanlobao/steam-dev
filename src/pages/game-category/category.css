@@ -10,6 +10,10 @@ body {
     background-color: oklch(86.9% 0.022 252.894) !important;
 }
 
+.game-card {
+    cursor: pointer;
+}
+
 #btnSearch, #btnLogin {
   color: white;
 }
