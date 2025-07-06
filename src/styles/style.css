@@ -30,6 +30,6 @@ body {
 
 .carousel-caption span {
     padding: 4px;
-    background-color: oklch(0.302 0.056 229.7 / 0.6);
+    background-color: oklch(0.302 0.056 229.7 / 0.8);
     font-weight: 600;
 }
