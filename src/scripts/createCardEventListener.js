@@ -1,4 +1,4 @@
-export function createCardEventListener(){
+export function createCardEventListener(itemsList){
     let cardList = document.querySelectorAll('.game-card');
 
     function redirect() {

@@ -7,8 +7,8 @@ btnSearch.addEventListener("click", () => {
 });
 
 window.addEventListener("load", () => {
-    const url = new URL(window.location.href);
-      const id = url.searchParams.get("id");
-      const newGames = games.filter((e) => e.id == id)
-      console.log(newGames)
+  const url = new URL(window.location.href);
+  const id = url.searchParams.get("id");
+  const newGames = games.filter((e) => e.id == id)
+  console.log(newGames)
 })
