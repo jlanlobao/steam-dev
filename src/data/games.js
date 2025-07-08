@@ -122,7 +122,7 @@ export const games = [
             "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3059520/41e2dc99ae68ff3f7628403fac109aa9b784fa8b/ss_41e2dc99ae68ff3f7628403fac109aa9b784fa8b.1920x1080.jpg?t=1748910595",
             "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3059520/eafccbc66e73d86a7df704d1c767932e884655a3/ss_eafccbc66e73d86a7df704d1c767932e884655a3.600x338.jpg?t=1748910595"        
         ],
-        description: ""
+        description: "Leave your mark on the world of racing in F1® 25, the official video game of the 2025 FIA Formula One World Championship™, featuring a revamped My Team mode, the thrilling third chapter of Braking Point, and more!"
     },
     {
         id: 9, 
@@ -137,7 +137,7 @@ export const games = [
             "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/468920/ss_9f86e7d64571fad9414f9c99c53f89a205918dd3.600x338.jpg?t=1750160795",
             "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/468920/ss_9f86e7d64571fad9414f9c99c53f89a205918dd3.600x338.jpg?t=1750160795"        
         ],
-        description: "Leave your mark on the world of racing in F1® 25, the official video game of the 2025 FIA Formula One World Championship™, featuring a revamped My Team mode, the thrilling third chapter of Braking Point, and more!"
+        description: "Pesque ao redor do mundo com boia, fundo, spinning ou arremesso e capture 60+ espécies realistas! Jogue solo ou online, explore locais incríveis, use a câmera subaquática e complete sua sala de troféus!"
     },
     {
         id: 10, 
