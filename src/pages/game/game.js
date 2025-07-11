@@ -14,19 +14,24 @@ window.addEventListener("load", () => {
   const game = newGames[0];
 
   gameContent.innerHTML += `
-            <h1 class="container">${game.name}</h1>
-        <div class="container d-flex">
-            <img class="col-md-6" src="${game.thumb}" alt="">
-            <div class="col-md-6 mx-4 d-flex flex-column justify-content-between">
-                <p>${game.description}</p>
-                <p>Avaliação: ${game.rating}</p>
-                <p>${game.promoPrice.toLocaleString('pt-BR', {
-                  style: 'currency',
-                  currency: 'BRL'
-                })}</p>
-                <button id="btnAddToCart" class="btn btn-primary">Adicionar Ao Carrinho</button>
-            </div>
+    <h1 class="container">${game.name}</h1>
+    <div class="container d-flex">
+      <div class="row d-flex align-items-start">
+        <img class="col-md" src="${game.thumb}" alt="${game.name}">
+
+          <div class="col-md d-flex flex-column justify-content-between">
+            <p>${game.description}</p>
+            <p>Avaliação: ${game.rating}</p>
+            <p>${game.promoPrice.toLocaleString('pt-BR', {
+              style: 'currency',
+              currency: 'BRL'
+            })}</p>
+            <button id="btnAddToCart" class="btn btn-primary">Adicionar Ao Carrinho</button>
+   
         </div>
+      </div>
+        
+    </div>
 `;
   
 })
