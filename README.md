@@ -26,3 +26,12 @@ Voce deve colocar icones do seu github, linkedin, whatsapp e email
 
 [X] Ao clicar em algum jogo fazer o esquema de ter uma nova pagina para renderizar o jogo.
 [X] nova pagina sera a game.html e deve receber uma query pelo ID
+
+
+
+[ ] Perfil - DEVE TER UMA COLUNA com JOGOS adicionados
+[ ] O esquema do LOCALSTORAGE - Alem de voce pegar o TOKEN - Vai armazenar o username
+[ ] Vai salvar os jogos no LOCALSTORAGE - Id do jogo
+
+[ ] Foca tb em comecar a tornar a pagina responsiva
+[ ] Resolver os pequenos BUGs de link, coisas que ainda faltam implementar. 
