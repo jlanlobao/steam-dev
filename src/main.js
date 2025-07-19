@@ -1,5 +1,6 @@
 import { games } from "./data/games.js";
 import { createNewGame } from "./scripts/createNewGames.js";
+import { hasIdUser } from "./scripts/hasIdUser.js";
 import { createCardEventListener } from "./scripts/createCardEventListener.js";
 
 // SELETORES
@@ -12,6 +13,10 @@ const btnSports = document.getElementById("btn-sports");
 const btnFight = document.getElementById("btn-fight");
 const btnSearch = document.getElementById("btnSearch");
 const inputSearch = document.getElementById("inputSearch");
+const btnProfile = document.getElementById("btnProfile");
+const btnLogout = document.getElementById("btnLogout");
+const btnLogin = document.getElementById("btnLogin");
+
 
 // FUNCOES
 const promoGames = games.filter(
@@ -24,27 +29,32 @@ const recomendedGames = games.filter(
 
 // Eventos
 btnAction.addEventListener("click", () => {
-  window.location.href = `src/pages/game-category/index.html?category=${btnAction.name}`;
+  window.location.href = `/src/pages/game-category/index.html?category=${btnAction.name}`;
 });
 
 btnSimulation.addEventListener("click", () => {
-  window.location.href = `src/pages/game-category/index.html?category=${btnSimulation.name}`;
+  window.location.href = `/src/pages/game-category/index.html?category=${btnSimulation.name}`;
 });
 
 btnMmorpg.addEventListener("click", () => {
-  window.location.href = `src/pages/game-category/index.html?category=${btnMmorpg.name}`;
+  window.location.href = `/src/pages/game-category/index.html?category=${btnMmorpg.name}`;
 });
 
 btnSports.addEventListener("click", () => {
-  window.location.href = `src/pages/game-category/index.html?category=${btnSports.name}`;
+  window.location.href = `/src/pages/game-category/index.html?category=${btnSports.name}`;
 });
 
 btnFight.addEventListener("click", () => {
-  window.location.href = `src/pages/game-category/index.html?category=${btnFight.name}`;
+  window.location.href = `/src/pages/game-category/index.html?category=${btnFight.name}`;
 });
 
 btnSearch.addEventListener("click", () => {
-  window.location.href = `/steam-dev/src/pages/search/search.html?search=${inputSearch.value}`;
+  window.location.href = `/src/pages/search/search.html?search=${inputSearch.value}`;
+});
+
+btnLogout.addEventListener("click", () => {
+  localStorage.removeItem("id_user");
+  window.location.href = '/index.html';
 });
 
 window.addEventListener("load", () => {
@@ -52,4 +62,11 @@ window.addEventListener("load", () => {
   createNewGame(recomendedGames, divRecommended);
 
   createCardEventListener();
+
+  if(hasIdUser()) {
+    btnLogin.className += " hidden";
+  } else {
+    btnProfile.className += " hidden";
+    btnLogout.className += " hidden";
+  }
 });

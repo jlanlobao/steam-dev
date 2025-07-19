@@ -15,11 +15,11 @@ body {
 }
 
 /* Header */
-#btnLogin, #btnSearch {
+#btnLogin, #btnSearch, #btnLogout, #btnProfile {
     color: white;
 }
 
-#btnLogin:hover, #btnSearch:hover{
+#btnLogin:hover, #btnSearch:hover, #btnLogout:hover, #btnProfile:hover {
     background-color: oklch(0.372 0.044 257.287);
 }
 
@@ -32,4 +32,8 @@ body {
     padding: 4px;
     background-color: oklch(0.302 0.056 229.7 / 0.8);
     font-weight: 600;
+}
+
+.hidden {
+    display: none !important;
 }

@@ -19,13 +19,13 @@
 <body class="bg-body">
     <header class="my-header bg-cyan-950 py-4">
         <div class="d-flex container justify-content-between">
-            <a class="text-white nav-link align-content-center" href="/steam-dev/index.html">SteamDev</a>
+            <a class="text-white nav-link align-content-center" href="/index.html">SteamDev</a>
 
             <div class="d-flex">
                 <input type="text" id="inputSearch" class="form-control" placeholder="procurar">
                 <i class="btn bi bi-search" id="btnSearch"></i>
                 
-                <a href="/steam-dev/src/pages/login/index.html"
+                <a href="/src/pages/login/index.html"
                     id="btnLogin"
                     class="btn d-flex py-2 px-4 rounded nav-link">
                     <i class="px-2 bi bi-person-circle"></i>
@@ -37,6 +37,10 @@
 
     <main class="d-flex align-items-center py-6">
         <form class="w-100 m-auto form-container">
+            <div class="mb-3">
+                <label for="inputUser" class="form-label">Usuario</label>
+                <input type="text" class="form-control" id="inputUser" placeholder="Seu nome de usuario">
+            </div>
             <div class="mb-3">
                 <label for="inputEmail" class="form-label">Email</label>
                 <input type="email" class="form-control" id="inputEmail" placeholder="Seu e-mail">

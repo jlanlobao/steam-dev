@@ -1,10 +1,19 @@
 import { games } from "../../data/games.js";
 
 const btnSearch = document.getElementById("btnSearch");
-const gameContent = document.getElementById("gameContent")
+const gameContent = document.getElementById("gameContent");
+const btnProfile = document.getElementById("btnProfile");
+const btnLogout = document.getElementById("btnLogout");
+const btnLogin = document.getElementById("btnLogin");
+import { hasIdUser } from "../../scripts/hasIdUser.js";
 
 btnSearch.addEventListener("click", () => {
-  window.location.href = `/steam-dev/src/pages/search/search.html?search=${inputSearch.value}`;
+  window.location.href = `/src/pages/search/search.html?search=${inputSearch.value}`;
+});
+
+btnLogout.addEventListener("click", () => {
+  localStorage.removeItem("id_user");
+  window.location.href = '/index.html';
 });
 
 window.addEventListener("load", () => {
@@ -33,5 +42,15 @@ window.addEventListener("load", () => {
         
     </div>
 `;
+
+if(hasIdUser()) {
+    btnProfile.style.display = "flex";
+    btnLogout.style.display = "flex";
+    btnLogin.className += " hidden";
+  } else {
+    btnProfile.className += " hidden";
+    btnLogout.className += " hidden";
+    btnLogin.style.display = "flex";
+  }
   
 })

@@ -14,12 +14,12 @@ body {
     cursor: pointer;
 }
 
-#btnSearch, #btnLogin {
-  color: white;
+#btnLogin, #btnSearch, #btnLogout, #btnProfile {
+    color: white;
 }
 
-#btnSearch:hover, #btnLogin:hover {
-  background-color: oklch(0.372 0.044 257.287);
+#btnLogin:hover, #btnSearch:hover, #btnLogout:hover, #btnProfile:hover {
+    background-color: oklch(0.372 0.044 257.287);
 }
 
 #new-games {
@@ -31,4 +31,8 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+
+.hidden {
+    display: none !important;
 }
