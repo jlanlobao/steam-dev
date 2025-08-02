@@ -36,9 +36,6 @@ window.addEventListener("load", ()=> {
           })}</p>
         </div>
       </div>
-      
-      
-      
       `;
   })
 
@@ -50,7 +47,6 @@ window.addEventListener("load", ()=> {
       currency: "BRL",
       })}</p>
     </div>`
-
 })
 
 
