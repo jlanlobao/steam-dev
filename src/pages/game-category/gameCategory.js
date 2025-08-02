@@ -26,10 +26,10 @@ window.addEventListener("load", () => {
   if(hasIdUser()) {
     btnProfile.style.display = "flex";
     btnLogout.style.display = "flex";
-    btnLogin.className += " hidden";
+    btnLogin.classList.add("hidden")
   } else {
-    btnProfile.className += " hidden";
-    btnLogout.className += " hidden";
+    btnProfile.classList.add("hidden")
+    btnLogout.classList.add("hidden")
     btnLogin.style.display = "flex";
   }
 

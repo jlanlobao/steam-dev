@@ -47,7 +47,6 @@ div.col-md {
     background-color: oklch(0.302 0.056 229.695);
     border: none;
     color: white;
-
 }
 
 #btnLogin:hover, #btnSearch:hover, #btnSubmit:hover, #btnAddToCart:hover, #btnLogout:hover, #btnProfile:hover{

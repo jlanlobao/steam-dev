@@ -14,14 +14,18 @@ body, a {
     cursor: pointer;
 }
 
-#btnLogin, #btnSearch, #btnSubmit {
+#btnLogin, #btnSearch, #btnSubmit, #btnAddToCart, #btnLogout, #btnProfile {
     background-color: oklch(0.302 0.056 229.695);
+    border: none;
     color: white;
-
 }
 
-#btnLogin:hover, #btnSearch:hover, #btnSubmit:hover {
+#btnLogin:hover, #btnSearch:hover, #btnSubmit:hover, #btnAddToCart:hover, #btnLogout:hover, #btnProfile:hover{
     background-color: oklch(0.372 0.044 257.287);
+}
+
+.hidden {
+  display: none !important;
 }
 
 footer {

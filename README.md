@@ -29,9 +29,9 @@ Voce deve colocar icones do seu github, linkedin, whatsapp e email
 
 
 
-[ ] Perfil - DEVE TER UMA COLUNA com JOGOS adicionados
-[ ] O esquema do LOCALSTORAGE - Alem de voce pegar o TOKEN - Vai armazenar o username
-[ ] Vai salvar os jogos no LOCALSTORAGE - Id do jogo
+[X] Perfil - DEVE TER UMA COLUNA com JOGOS adicionados
+[X] O esquema do LOCALSTORAGE - Alem de voce pegar o TOKEN - Vai armazenar o username
+[X] Vai salvar os jogos no LOCALSTORAGE - Id do jogo
 
 [ ] Foca tb em comecar a tornar a pagina responsiva
-[ ] Resolver os pequenos BUGs de link, coisas que ainda faltam implementar. 
+[X] Resolver os pequenos BUGs de link, coisas que ainda faltam implementar. 

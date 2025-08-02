@@ -1,11 +1,37 @@
+body, a {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: oklch(0.302 0.056 229.695);
+}
+
+body {
+  background-color: oklch(86.9% 0.022 252.894) !important;
+}
+
 #btnLogin, #btnSearch, #btnLogout, #btnProfile {
-    color: white;
+  color: white;
 }
 
 #btnLogin:hover, #btnSearch:hover, #btnLogout:hover, #btnProfile:hover {
-    background-color: oklch(0.372 0.044 257.287);
+  background-color: oklch(0.372 0.044 257.287);
+}
+
+main {
+  min-height: 100vh !important;
+}
+
+footer {
+  height: 120px;
+  display: flex;
+  margin-top: -120px;
 }
 
 .hidden {
   display: none !important;
+}
+
+main {
+  padding: 20px;
 }

@@ -27,6 +27,8 @@ async function postLogin(username, password) {
   const res = await req.json();
   console.log(res.token);
   localStorage.setItem('id_user', res.token);
+  localStorage.setItem('username', username);
+  window.location.href = '/index.html';
 }
 
 
@@ -43,5 +45,4 @@ btnSearch.addEventListener("click", () => {
 btnSubmit.addEventListener("click", () => {
   event.preventDefault();
   login();
-  //window.location.href = '/index.html'
 });

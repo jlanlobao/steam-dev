@@ -64,9 +64,9 @@ window.addEventListener("load", () => {
   createCardEventListener();
 
   if(hasIdUser()) {
-    btnLogin.className += " hidden";
+    btnLogin.classList.add("hidden");
   } else {
-    btnProfile.className += " hidden";
-    btnLogout.className += " hidden";
+    btnProfile.classList.add("hidden")
+    btnLogout.classList.add("hidden")
   }
 });
