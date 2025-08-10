@@ -38,8 +38,8 @@ window.addEventListener("load", () => {
     <h1 class="container">${game.name}</h1>
     <div class="container d-flex">
       <div class="row d-flex align-items-start">
-        <img id="img-current" class="col-md" src="${game.thumb}" alt="${game.name}">
-        <div class="col-md d-flex flex-column justify-content-between">
+        <img id="img-current" class="col-xl-6 col-md-12" src="${game.thumb}" alt="${game.name}">
+        <div class="col-xl-6 col-md-12 d-flex flex-column justify-content-between">
           <p>${game.description}</p>
           <p>Avaliação: ${game.rating}</p>
           <p>${game.promoPrice.toLocaleString("pt-BR", {
