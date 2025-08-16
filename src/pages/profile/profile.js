@@ -2,6 +2,7 @@ import { games } from "../../data/games.js";
 import { hasIdUser } from "../../scripts/hasIdUser.js";
 
 const rightContainer = document.getElementById('right-container');
+const profileName = document.getElementById("profileName");
 
 
 window.addEventListener("load", ()=> {
@@ -10,6 +11,9 @@ window.addEventListener("load", ()=> {
   } else {
     btnLogin.classList.add("hidden")
   }
+
+  
+  profileName.innerText = localStorage.getItem("username");
 
   const username = localStorage.getItem("username");
   let cartGames = localStorage.getItem("games");

@@ -15,6 +15,7 @@ const inputSearch = document.getElementById("inputSearch");
 const btnProfile = document.getElementById("btnProfile");
 const btnLogout = document.getElementById("btnLogout");
 const btnLogin = document.getElementById("btnLogin");
+const profileName = document.getElementById("profileName");
 
 
 window.addEventListener("load", () => {
@@ -24,14 +25,12 @@ window.addEventListener("load", () => {
   console.log(newGames);
 
   if(hasIdUser()) {
-    btnProfile.style.display = "flex";
-    btnLogout.style.display = "flex";
-    btnLogin.classList.add("hidden")
-  } else {
-    btnProfile.classList.add("hidden")
-    btnLogout.classList.add("hidden")
-    btnLogin.style.display = "flex";
-  }
+      profileName.innerText = localStorage.getItem("username");
+      btnLogin.classList.add("hidden");    
+    } else {
+      btnProfile.classList.add("hidden");
+      btnLogout.classList.add("hidden");
+    }
 
   btnAction.addEventListener("click", () => {
     window.location.href = `/src/pages/game-category/index.html?category=${btnAction.name}`;

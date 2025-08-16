@@ -16,6 +16,7 @@ const inputSearch = document.getElementById("inputSearch");
 const btnProfile = document.getElementById("btnProfile");
 const btnLogout = document.getElementById("btnLogout");
 const btnLogin = document.getElementById("btnLogin");
+const profileName = document.getElementById("profileName");
 
 
 // FUNCOES
@@ -64,9 +65,10 @@ window.addEventListener("load", () => {
   createCardEventListener();
 
   if(hasIdUser()) {
-    btnLogin.classList.add("hidden");
+    profileName.innerText = localStorage.getItem("username");
+    btnLogin.classList.add("hidden");    
   } else {
-    btnProfile.classList.add("hidden")
-    btnLogout.classList.add("hidden")
+    btnProfile.classList.add("hidden");
+    btnLogout.classList.add("hidden");
   }
 });

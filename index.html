@@ -17,28 +17,45 @@
 </head>
 
 <body class="bg-body">
-    <header class="bg-cyan-950 py-4">
-        <div class="d-flex container justify-content-between">
-            <a class="text-white nav-link align-content-center" href="#">SteamDev</a>
+    <header class="border-bottom bg-cyan-950 py-4">
+        <div class="container justify-content-between">
+            <div class="row align-items-center">
 
-            <div class="d-flex">
-                <input type="text" id="inputSearch" class="form-control" placeholder="procurar">
-                <i class="btn bi bi-search" id="btnSearch"></i>
+                <div class="col-12 col-md-4 align-content-center" id="logo">
+                    <a class="text-white nav-link " href="/index.html">SteamDev</a>
+                </div>
 
-                <a href="/src/pages/profile/index.html" id="btnProfile" class="btn d-flex py-2 px-4 rounded nav-link">
-                    <i class="px-2 bi bi-person-circle"></i>
-                    Perfil
-                </a>
+                <div class="col-12 col-md-4">
+                    <form role="search" class="d-flex">
+                        <input type="text" id="inputSearch" class="form-control" placeholder="procurar">
+                        <i class="btn bi bi-search" id="btnSearch"></i>
+                    </form>
+                </div>
 
-                <a href="/src/pages/login/index.html" id="btnLogout" class="btn d-flex py-2 px-4 rounded nav-link">
-                    <i class="px-2 bi bi-x-circle"></i>
-                    Sair
-                </a>
+                <div class="col-6 col-md-2 d-flex justify-content-md-end" id="btnProfile">
+                    <a href="/src/pages/profile/index.html"
+                        class="btn d-flex py-2 px-4 rounded nav-link">
+                        <i class="px-2 bi bi-person-circle"></i>
+                        <span id="profileName"></span>
+                    </a>
+                </div>
 
-                <a href="/src/pages/login/index.html" id="btnLogin" class="btn d-flex py-2 px-4 rounded nav-link">
-                    <i class="px-2 bi bi-box-arrow-in-right"></i>
-                    Login
-                </a>
+                <div class="col-6 col-md-2 d-flex justify-content-md-end" id="btnLogout">
+                    <a href=""
+                        class="btn d-flex py-2 px-4 rounded nav-link">
+                        <i class="px-2 bi bi-x-circle"></i>
+                        Sair
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-4 d-flex justify-content-end" id="btnLogin">
+                    <a href="/src/pages/login/index.html"
+                        class="btn d-flex py-2 px-4 rounded nav-link">
+                        <i class="px-2 bi bi-box-arrow-in-right"></i>
+                        Login
+                    </a>
+                </div>
+
             </div>
         </div>
     </header>
@@ -47,7 +64,7 @@
         <div class="container mt-3">
             <div class="row">
                 <div class="col-xl-4 col-lg-2 col-md-12 col-sm-12">
-                    <div class="d-flex flex-column mb-5">
+                    <div class="d-flex flex-column mb-4">
                         <button name="Action" id="btn-action"
                             class="col-lg bg-cyan-950 hover:bg-slate-700 text-white py-2 px-4">
                             Action

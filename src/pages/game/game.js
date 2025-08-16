@@ -24,14 +24,12 @@ window.addEventListener("load", () => {
   const newGames = games.filter((e) => e.id == id);
   const game = newGames[0];
 
-  if (hasIdUser()) {
-    btnProfile.style.display = "flex";
-    btnLogout.style.display = "flex";
-    btnLogin.classList.add("hidden");
+if(hasIdUser()) {
+    profileName.innerText = localStorage.getItem("username");
+    btnLogin.classList.add("hidden");    
   } else {
     btnProfile.classList.add("hidden");
     btnLogout.classList.add("hidden");
-    btnLogin.style.display = "flex";
   }
 
   gameContent.innerHTML += `

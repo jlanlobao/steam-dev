@@ -3,7 +3,7 @@ body, a {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  color: oklch(0.302 0.056 229.695)
+  color: oklch(0.302 0.056 229.695);
 }
 
 .bg-body {
@@ -25,9 +25,9 @@ body, a {
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .hidden {

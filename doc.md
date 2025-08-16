@@ -36,17 +36,17 @@ Voce deve colocar icones do seu github, linkedin, whatsapp e email
 [X] O esquema do LOCALSTORAGE - Alem de voce pegar o TOKEN - Vai armazenar o username
 [X] Vai salvar os jogos no LOCALSTORAGE - Id do jogo
 
-[ ] Foca tb em comecar a tornar a pagina responsiva
+[X] Foca tb em comecar a tornar a pagina responsiva
 [X] Resolver os pequenos BUGs de link, coisas que ainda faltam implementar. 
 
 
-[ ] Senha ou usuario inconrretos - vai criar um esquema de alertar que a autenticacao falhou. 
+[x] Senha ou usuario inconrretos - vai criar um esquema de alertar que a autenticacao falhou. 
 
-[ ] Em vez de aparecer perfil - Conitnua o icone porem vai exibir o nome do usuario.
+[x] Em vez de aparecer perfil - Conitnua o icone porem vai exibir o nome do usuario.
 
-[ ] Corrigir os buttons do gamecategory.html
+[X] Corrigir os buttons do gamecategory.html
 
-[ ] Corrigir Style da pagina game, que falta o container branco.
+[X] Corrigir Style da pagina game, que falta o container branco.
 
 [ ] na pagina de profile. Inventar um bloco de elemento ou conteudo na esquerda.
 

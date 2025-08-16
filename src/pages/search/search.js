@@ -20,11 +20,11 @@ window.addEventListener("load", () => {
   const newGames = games.filter((e) => e.name.toLowerCase().includes(search.toLowerCase()));
 
   if(hasIdUser()) {
+    profileName.innerText = localStorage.getItem("username");
     btnLogin.classList.add("hidden");
-    console.log("oi")
   } else {
-    btnProfile.classList.add("hidden")
-    btnLogout.classList.add("hidden")
+    btnProfile.classList.add("hidden");
+    btnLogout.classList.add("hidden");
   }
   
   const newTitle = document.createElement("h4");
